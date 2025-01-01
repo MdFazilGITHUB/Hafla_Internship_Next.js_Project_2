@@ -1,0 +1,63 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.profile {
+  padding: 20px;
+  background-color: #111827;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  margin-right: 25px;
+}
+
+.link {
+  background-color: white;
+  color: #111827;
+  padding: 5px 10px;
+  border: 2px solid #111827;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.link:hover {
+  background-color: #111827;
+  color: white;
+  border: 2px solid white;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.name {
+  text-transform: capitalize;
+}
+
+@media (min-width: 700px) {
+  .main {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .main {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media (min-width: 1536px) {
+  .main {
+    grid-template-columns: repeat(4,1fr);
+    padding: 40px 80px;
+  }
+}
